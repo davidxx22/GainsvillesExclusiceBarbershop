@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gainesville's Exclusive Barbershop</title>
+    <meta name="description" content="Learn more about Gainesville's Exclusive Barbershop and meet our team of master barbers.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-section { padding-top: 150px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- About Us Page -->
+        <section id="about" class="page-section">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="story-text">
+                    <p>At Gainesville's Exclusive Barbershop, grooming is more than a routine—it's an experience. Founded on a commitment to the craft, community, and tradition of exceptional grooming, we blend timeless techniques with modern aesthetics.</p>
+                    <p>Our barbers are artisans, meticulously trained to deliver precision haircuts, expert shaves, and unparalleled service in a luxurious environment.</p>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h3>Meet the Team</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Dylon</h4>
+                        <p class="specialty">Master Barber & Fades Specialist</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Terry</h4>
+                        <p class="specialty">Beard & Hot Towel Shave Expert</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Fila</h4>
+                        <p class="specialty">Classic Cuts & Styling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

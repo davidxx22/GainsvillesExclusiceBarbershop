@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Gainesville's Exclusive Barbershop</title>
+    <meta name="description" content="Read reviews from our satisfied clients about their premium grooming experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-section { padding-top: 150px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Testimonials Page -->
+        <section id="testimonials" class="page-section">
+            <div class="section-header">
+                <h2>Client Experiences</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"Absolutely the best skin fade I've ever had. The attention to detail is unmatched, and the hot towel finish is incredibly relaxing. Premium experience from start to finish."</p>
+                    <p class="customer-name">— David M.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i- data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"Gainesville's Exclusive isn't just a barbershop; it's a sanctuary. The ambiance is upscale yet welcoming. Marcus always gets my style exactly right."</p>
+                    <p class="customer-name">— Jonathan K.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"I tried their Ultimate Grooming Package before my wedding. The straight razor shave was flawlessly smooth. Highly recommend Julian for beard trims!"</p>
+                    <p class="customer-name">— Michael R.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

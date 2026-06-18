@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gainesville's Exclusive Barbershop</title>
+    <meta name="description" content="Premium Grooming Starts Here. Experience the finest barber services in Gainesville.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Premium Grooming Starts Here</h1>
+                    <p class="hero-tagline">Elevate your style with master barbers committed to exceptional craftsmanship.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="window.location.hash='#contact'">Book Now</button>
+                        <button class="btn-secondary" onclick="window.location.hash='#services'">Explore Services</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value-props">
+                <div class="prop-card">
+                    <i data-lucide="scissors" class="prop-icon"></i>
+                    <h3>Expert Barbers</h3>
+                    <p>Masters of their craft, ensuring precision in every cut and style.</p>
+                </div>
+                <div class="prop-card">
+                    <i data-lucide="spray-can" class="prop-icon"></i>
+                    <h3>Premium Products</h3>
+                    <p>We use only the finest grooming products for your hair and skin.</p>
+                </div>
+                <div class="prop-card">
+                    <i data-lucide="armchair" class="prop-icon"></i>
+                    <h3>Luxury Comfort</h3>
+                    <p>Relax in our modern, upscale environment designed for your comfort.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="main-content">
+        <!-- About Us Page -->
+        <section id="about" class="page-section">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="story-text">
+                    <p>At Gainesville's Exclusive Barbershop, grooming is more than a routine—it's an experience. Founded on a commitment to the craft, community, and tradition of exceptional grooming, we blend timeless techniques with modern aesthetics.</p>
+                    <p>Our barbers are artisans, meticulously trained to deliver precision haircuts, expert shaves, and unparalleled service in a luxurious environment.</p>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h3>Meet the Team</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Dylon</h4>
+                        <p class="specialty">Master Barber & Fades Specialist</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Terry</h4>
+                        <p class="specialty">Beard & Hot Towel Shave Expert</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="headshot placeholder-img"></div>
+                        <h4>Fila</h4>
+                        <p class="specialty">Classic Cuts & Styling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="main-content">
+        <!-- Services Page -->
+        <section id="services" class="page-section">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="divider"></div>
+                <p class="service-note">All services include a complimentary hot towel treatment.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3>Haircuts</h3>
+                    <div class="service-menu">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Standard Haircut</h4>
+                                <p>A tailored precision cut finished with styling.</p>
+                            </div>
+                            <div class="service-price">$40</div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Exclusive Skin Fade</h4>
+                                <p>Flawless skin fade, blended to perfection.</p>
+                            </div>
+                            <div class="service-price">$45</div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Buzz Cut</h4>
+                                <p>Clean, even clipper cut with sharp line-up.</p>
+                            </div>
+                            <div class="service-price">$30</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h3>Shaves & Beard</h3>
+                    <div class="service-menu">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Hot Towel Shave</h4>
+                                <p>Traditional straight razor shave with essential oils.</p>
+                            </div>
+                            <div class="service-price">$35</div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Beard Trim & Line Up</h4>
+                                <p>Sculpting, shaping, and crisp straight razor edges.</p>
+                            </div>
+                            <div class="service-price">$25</div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Ultimate Grooming Pkg</h4>
+                                <p>Haircut, hot towel shave, facial scrub, and styling.</p>
+                            </div>
+                            <div class="service-price">$80</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <main id="main-content">
+        <!-- Testimonials Page -->
+        <section id="testimonials" class="page-section">
+            <div class="section-header">
+                <h2>Client Experiences</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"Absolutely the best skin fade I've ever had. The attention to detail is unmatched, and the hot towel finish is incredibly relaxing. Premium experience from start to finish."</p>
+                    <p class="customer-name">— David M.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i- data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"Gainesville's Exclusive isn't just a barbershop; it's a sanctuary. The ambiance is upscale yet welcoming. Marcus always gets my style exactly right."</p>
+                    <p class="customer-name">— Jonathan K.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                    </div>
+                    <p class="quote">"I tried their Ultimate Grooming Package before my wedding. The straight razor shave was flawlessly smooth. Highly recommend Julian for beard trims!"</p>
+                    <p class="customer-name">— Michael R.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="main-content">
+        <!-- FAQ Page -->
+        <section id="faq" class="page-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-container">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you accept walk-ins?
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>While we do accept walk-ins based on availability, we highly recommend booking an appointment in advance to ensure you receive your preferred time and barber.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How can I book an appointment?
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can book an appointment directly through our website by clicking the "Book Appointment" button, or you can give us a call at (135) 245-14831.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What premium hair products do you use?
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We curate the finest grooming products from top-tier brands, including high-end pomades, natural beard oils, and soothing aftershaves tailored for optimal skin and hair health.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Where is the shop located?
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We are conveniently located at 201 SE 2nd Pl Suite 109, Gainesville, FL 32601, United States.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="main-content">
+        <!-- Contact Us Page -->
+        <section id="contact" class="page-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Shop Details</h3>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <p>201 SE 2nd Pl Suite 109<br>Gainesville, FL 32601<br>United States</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="phone"></i>
+                        <p>(135) 245-14831</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="clock"></i>
+                        <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sun: Closed</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Service Requested</option>
+                                <option value="haircut">Haircut</option>
+                                <option value="shave">Shave & Beard</option>
+                                <option value="package">Ultimate Grooming Package</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

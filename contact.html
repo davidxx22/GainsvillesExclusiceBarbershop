@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gainesville's Exclusive Barbershop</title>
+    <meta name="description" content="Contact Gainesville's Exclusive Barbershop to book your premium grooming experience.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Extra padding so the contact page starts below navbar */
+        #contact {
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">
+                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home" class="nav-link" data-target="home">Home</a></li>
+                <li><a href="index.html#about" class="nav-link" data-target="about">About Us</a></li>
+                <li><a href="index.html#services" class="nav-link" data-target="services">Services</a></li>
+                <li><a href="index.html#testimonials" class="nav-link" data-target="testimonials">Testimonials</a></li>
+                <li><a href="index.html#faq" class="nav-link" data-target="faq">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Contact Us Page -->
+        <section id="contact" class="page-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Shop Details</h3>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <p>201 SE 2nd Pl Suite 109<br>Gainesville, FL 32601<br>United States</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="phone"></i>
+                        <p>(135) 245-14831</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="clock"></i>
+                        <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sun: Closed</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Service Requested</option>
+                                <option value="haircut">Haircut</option>
+                                <option value="shave">Shave & Beard</option>
+                                <option value="package">Ultimate Grooming Package</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
