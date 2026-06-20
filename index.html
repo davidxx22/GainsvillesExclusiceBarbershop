@@ -3,84 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gainesville's Exclusive Barbershop</title>
-    <meta name="description" content="Premium Grooming Starts Here. Experience the finest barber services in Gainesville.">
-    <!-- Google Fonts -->
+    <title>Gainesville's Exclusive Barbershop | Premium Grooming</title>
+    <meta name="description" content="Premium Grooming Starts Here. Experience the finest barber services in Gainesville, FL.">
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Non-render-blocking font load -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="index.html">
-                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo">
+                <a href="index.html" aria-label="Gainesville's Exclusive Barbershop - Home">
+                    <img src="img/GNV logo.webp" alt="Gainesville's Exclusive Barbershop logo" class="brand-logo" width="55" height="55">
                 </a>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+                <li><a href="contact.html" class="btn-primary cta-nav" role="button">Book Appointment</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main id="main-content">
-        
-        <!-- Home Page -->
-        <section id="home" class="page-section active">
+        <!-- Hero Section -->
+        <section id="home" class="page-section" aria-label="Hero">
             <div class="hero">
-                <div class="hero-overlay"></div>
+                <div class="hero-overlay" aria-hidden="true"></div>
                 <div class="hero-content">
                     <h1 class="hero-title">Premium Grooming Starts Here</h1>
                     <p class="hero-tagline">Elevate your style with master barbers committed to exceptional craftsmanship.</p>
                     <div class="hero-buttons">
-                        <button class="btn-primary" onclick="window.location.hash='#contact'">Book Now</button>
-                        <button class="btn-secondary" onclick="window.location.hash='#services'">Explore Services</button>
+                        <a href="contact.html" class="btn-primary">Book Now</a>
+                        <a href="services.html" class="btn-secondary">Explore Services</a>
                     </div>
                 </div>
             </div>
 
             <div class="value-props">
                 <div class="prop-card">
-                    <i data-lucide="scissors" class="prop-icon"></i>
-                    <h3>Expert Barbers</h3>
+                    <i data-lucide="scissors" class="prop-icon" aria-hidden="true"></i>
+                    <h2 class="prop-title">Expert Barbers</h2>
                     <p>Masters of their craft, ensuring precision in every cut and style.</p>
                 </div>
                 <div class="prop-card">
-                    <i data-lucide="spray-can" class="prop-icon"></i>
-                    <h3>Premium Products</h3>
+                    <i data-lucide="spray-can" class="prop-icon" aria-hidden="true"></i>
+                    <h2 class="prop-title">Premium Products</h2>
                     <p>We use only the finest grooming products for your hair and skin.</p>
                 </div>
                 <div class="prop-card">
-                    <i data-lucide="armchair" class="prop-icon"></i>
-                    <h3>Luxury Comfort</h3>
+                    <i data-lucide="armchair" class="prop-icon" aria-hidden="true"></i>
+                    <h2 class="prop-title">Luxury Comfort</h2>
                     <p>Relax in our modern, upscale environment designed for your comfort.</p>
                 </div>
             </div>
         </section>
-    </main>
 
-    <main id="main-content">
-        <!-- About Us Page -->
-        <section id="about" class="page-section">
+        <section id="about" class="page-section inner-page" aria-label="About Us">
             <div class="section-header">
-                <h2>Our Story</h2>
-                <div class="divider"></div>
+                <h1>Our Story</h1>
+                <div class="divider" aria-hidden="true"></div>
             </div>
             <div class="about-content">
                 <div class="story-text">
@@ -90,225 +86,259 @@
             </div>
 
             <div class="team-section">
-                <h3>Meet the Team</h3>
+                <h2>Meet the Team</h2>
                 <div class="team-grid">
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Dylon</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Dylon"></div>
+                        <h3>Dylon</h3>
                         <p class="specialty">Master Barber & Fades Specialist</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Terry</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Terry"></div>
+                        <h3>Terry</h3>
                         <p class="specialty">Beard & Hot Towel Shave Expert</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Fila</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Fila"></div>
+                        <h3>Fila</h3>
                         <p class="specialty">Classic Cuts & Styling</p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <main id="main-content">
-        <!-- Services Page -->
-        <section id="services" class="page-section">
+        <section id="services" class="page-section inner-page" aria-label="Our Services">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <div class="divider"></div>
+                <h1>Our Services</h1>
+                <div class="divider" aria-hidden="true"></div>
                 <p class="service-note">All services include a complimentary hot towel treatment.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-category">
-                    <h3>Haircuts</h3>
-                    <div class="service-menu">
-                        <div class="service-item">
+                    <h2>Haircuts</h2>
+                    <div class="service-menu" role="list">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Standard Haircut</h4>
+                                <h3>Standard Haircut</h3>
                                 <p>A tailored precision cut finished with styling.</p>
                             </div>
-                            <div class="service-price">$40</div>
+                            <div class="service-price" aria-label="Price: $40">$40</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Exclusive Skin Fade</h4>
+                                <h3>Exclusive Skin Fade</h3>
                                 <p>Flawless skin fade, blended to perfection.</p>
                             </div>
-                            <div class="service-price">$45</div>
+                            <div class="service-price" aria-label="Price: $45">$45</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Buzz Cut</h4>
+                                <h3>Buzz Cut</h3>
                                 <p>Clean, even clipper cut with sharp line-up.</p>
                             </div>
-                            <div class="service-price">$30</div>
+                            <div class="service-price" aria-label="Price: $30">$30</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="service-category">
-                    <h3>Shaves & Beard</h3>
-                    <div class="service-menu">
-                        <div class="service-item">
+                    <h2>Shaves & Beard</h2>
+                    <div class="service-menu" role="list">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Hot Towel Shave</h4>
+                                <h3>Hot Towel Shave</h3>
                                 <p>Traditional straight razor shave with essential oils.</p>
                             </div>
-                            <div class="service-price">$35</div>
+                            <div class="service-price" aria-label="Price: $35">$35</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Beard Trim & Line Up</h4>
+                                <h3>Beard Trim & Line Up</h3>
                                 <p>Sculpting, shaping, and crisp straight razor edges.</p>
                             </div>
-                            <div class="service-price">$25</div>
+                            <div class="service-price" aria-label="Price: $25">$25</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Ultimate Grooming Pkg</h4>
+                                <h3>Ultimate Grooming Pkg</h3>
                                 <p>Haircut, hot towel shave, facial scrub, and styling.</p>
                             </div>
-                            <div class="service-price">$80</div>
+                            <div class="service-price" aria-label="Price: $80">$80</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-     <main id="main-content">
-        <!-- Testimonials Page -->
-        <section id="testimonials" class="page-section">
+        <section id="testimonials" class="page-section inner-page" aria-label="Client Testimonials">
             <div class="section-header">
-                <h2>Client Experiences</h2>
-                <div class="divider"></div>
+                <h1>Client Experiences</h1>
+                <div class="divider" aria-hidden="true"></div>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                <article class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
                     </div>
-                    <p class="quote">"Absolutely the best skin fade I've ever had. The attention to detail is unmatched, and the hot towel finish is incredibly relaxing. Premium experience from start to finish."</p>
+                    <blockquote class="quote">"Absolutely the best skin fade I've ever had. The attention to detail is unmatched, and the hot towel finish is incredibly relaxing. Premium experience from start to finish."</blockquote>
                     <p class="customer-name">— David M.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i- data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
                     </div>
-                    <p class="quote">"Gainesville's Exclusive isn't just a barbershop; it's a sanctuary. The ambiance is upscale yet welcoming. Marcus always gets my style exactly right."</p>
+                    <blockquote class="quote">"Gainesville's Exclusive isn't just a barbershop; it's a sanctuary. The ambiance is upscale yet welcoming. They always get my style exactly right."</blockquote>
                     <p class="customer-name">— Jonathan K.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
+                        <i data-lucide="star" class="star-icon" aria-hidden="true"></i>
                     </div>
-                    <p class="quote">"I tried their Ultimate Grooming Package before my wedding. The straight razor shave was flawlessly smooth. Highly recommend Julian for beard trims!"</p>
+                    <blockquote class="quote">"I tried their Ultimate Grooming Package before my wedding. The straight razor shave was flawlessly smooth. Highly recommend them for beard trims!"</blockquote>
                     <p class="customer-name">— Michael R.</p>
-                </div>
+                </article>
             </div>
         </section>
-    </main>
 
-    <main id="main-content">
-        <!-- FAQ Page -->
-        <section id="faq" class="page-section">
+        <section id="faq" class="page-section inner-page" aria-label="Frequently Asked Questions">
             <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <div class="divider"></div>
+                <h1>Frequently Asked Questions</h1>
+                <div class="divider" aria-hidden="true"></div>
             </div>
             <div class="faq-container">
                 <div class="accordion-item">
-                    <button class="accordion-header">
-                        Do you accept walk-ins?
-                        <i data-lucide="chevron-down" class="accordion-icon"></i>
-                    </button>
-                    <div class="accordion-content">
+                    <h2 class="accordion-heading">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                            Do you accept walk-ins?
+                            <i data-lucide="chevron-down" class="accordion-icon" aria-hidden="true"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
                         <p>While we do accept walk-ins based on availability, we highly recommend booking an appointment in advance to ensure you receive your preferred time and barber.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">
-                        How can I book an appointment?
-                        <i data-lucide="chevron-down" class="accordion-icon"></i>
-                    </button>
-                    <div class="accordion-content">
+                    <h2 class="accordion-heading">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                            How can I book an appointment?
+                            <i data-lucide="chevron-down" class="accordion-icon" aria-hidden="true"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
                         <p>You can book an appointment directly through our website by clicking the "Book Appointment" button, or you can give us a call at (135) 245-14831.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">
-                        What premium hair products do you use?
-                        <i data-lucide="chevron-down" class="accordion-icon"></i>
-                    </button>
-                    <div class="accordion-content">
+                    <h2 class="accordion-heading">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                            What premium hair products do you use?
+                            <i data-lucide="chevron-down" class="accordion-icon" aria-hidden="true"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
                         <p>We curate the finest grooming products from top-tier brands, including high-end pomades, natural beard oils, and soothing aftershaves tailored for optimal skin and hair health.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-header">
-                        Where is the shop located?
-                        <i data-lucide="chevron-down" class="accordion-icon"></i>
-                    </button>
-                    <div class="accordion-content">
+                    <h2 class="accordion-heading">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                            Where is the shop located?
+                            <i data-lucide="chevron-down" class="accordion-icon" aria-hidden="true"></i>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
                         <p>We are conveniently located at 201 SE 2nd Pl Suite 109, Gainesville, FL 32601, United States.</p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <main id="main-content">
-        <!-- Contact Us Page -->
-        <section id="contact" class="page-section">
+        <section id="contact" class="page-section inner-page" aria-label="Contact Us">
             <div class="section-header">
-                <h2>Get In Touch</h2>
-                <div class="divider"></div>
+                <h1>Get In Touch</h1>
+                <div class="divider" aria-hidden="true"></div>
             </div>
             
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Shop Details</h3>
+                    <h2>Shop Details</h2>
                     <div class="info-item">
-                        <i data-lucide="map-pin"></i>
-                        <p>201 SE 2nd Pl Suite 109<br>Gainesville, FL 32601<br>United States</p>
+                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                        <address>
+                            201 SE 2nd Pl Suite 109<br>
+                            Gainesville, FL 32601<br>
+                            United States
+                        </address>
                     </div>
                     <div class="info-item">
-                        <i data-lucide="phone"></i>
-                        <p>(135) 245-14831</p>
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <p><a href="tel:+13524514831" aria-label="Call us at (135) 245-14831">(135) 245-14831</a></p>
                     </div>
                     <div class="info-item">
-                        <i data-lucide="clock"></i>
+                        <i data-lucide="clock" aria-hidden="true"></i>
                         <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sun: Closed</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i data-lucide="instagram"></i></a>
-                        <a href="#"><i data-lucide="facebook"></i></a>
-                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Twitter"><i data-lucide="twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" aria-label="Book an appointment">
                         <div class="form-group">
-                            <input type="text" id="name" required placeholder="Full Name">
+                            <label for="name" class="sr-only">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Full Name" autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" required placeholder="Email Address">
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Email Address" autocomplete="email">
                         </div>
                         <div class="form-group">
-                            <select id="service" required>
+                            <label for="service" class="sr-only">Service Requested</label>
+                            <select id="service" name="service" required>
                                 <option value="" disabled selected>Service Requested</option>
-                                <option value="haircut">Haircut</option>
-                                <option value="shave">Shave & Beard</option>
-                                <option value="package">Ultimate Grooming Package</option>
+                                <option value="standard-haircut">Standard Haircut</option>
+                                <option value="skin-fade">Exclusive Skin Fade</option>
+                                <option value="buzz-cut">Buzz Cut</option>
+                                <option value="hot-towel-shave">Hot Towel Shave</option>
+                                <option value="beard-trim">Beard Trim & Line Up</option>
+                                <option value="ultimate-package">Ultimate Grooming Package</option>
                                 <option value="other">Other Inquiry</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                            <label for="barber" class="sr-only">Preferred Barber</label>
+                            <select id="barber" name="barber" required>
+                                <option value="" disabled selected>Preferred Barber</option>
+                                <option value="dylon">Dylon</option>
+                                <option value="terry">Terry</option>
+                                <option value="troy">Troy</option>
+                                <option value="jay">Jay</option>
+                                <option value="jermaine">Jermaine</option>
+                                <option value="julius">Julius</option>
+                                <option value="fila">Fila</option>
+                                <option value="romelle">Romelle</option>
+                                <option value="jojoe">Jojoe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-100">Send Message</button>
                     </form>
@@ -318,16 +348,20 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
+            <nav aria-label="Footer navigation">
+                <div class="footer-links">
+                    <a href="contact.html" aria-label="Privacy Policy page">Privacy Policy</a>
+                    <a href="contact.html" aria-label="Terms of Service page">Terms of Service</a>
+                </div>
+            </nav>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- Defer script to avoid blocking main thread -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

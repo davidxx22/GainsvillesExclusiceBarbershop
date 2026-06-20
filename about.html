@@ -4,50 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Gainesville's Exclusive Barbershop</title>
-    <meta name="description" content="Learn more about Gainesville's Exclusive Barbershop and meet our team of master barbers.">
-    <!-- Google Fonts -->
+    <meta name="description" content="Learn about our story and meet the master barbers at Gainesville's Exclusive Barbershop.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .page-section { padding-top: 150px; }
-    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="index.html">
-                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                <a href="index.html" aria-label="Gainesville's Exclusive Barbershop - Home">
+                    <img src="img/GNV logo.webp" alt="Gainesville's Exclusive Barbershop logo" class="brand-logo" width="55" height="55">
                 </a>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="nav-links" role="list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="about.html" class="nav-link active" aria-current="page">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+                <li><a href="contact.html" class="btn-primary cta-nav" role="button">Book Appointment</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main id="main-content">
-        <!-- About Us Page -->
-        <section id="about" class="page-section">
+        <section id="about" class="page-section inner-page" aria-label="About Us">
             <div class="section-header">
-                <h2>Our Story</h2>
-                <div class="divider"></div>
+                <h1>Our Story</h1>
+                <div class="divider" aria-hidden="true"></div>
             </div>
             <div class="about-content">
                 <div class="story-text">
@@ -57,21 +51,21 @@
             </div>
 
             <div class="team-section">
-                <h3>Meet the Team</h3>
+                <h2>Meet the Team</h2>
                 <div class="team-grid">
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Dylon</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Dylon"></div>
+                        <h3>Dylon</h3>
                         <p class="specialty">Master Barber & Fades Specialist</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Terry</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Terry"></div>
+                        <h3>Terry</h3>
                         <p class="specialty">Beard & Hot Towel Shave Expert</p>
                     </div>
                     <div class="team-card">
-                        <div class="headshot placeholder-img"></div>
-                        <h4>Fila</h4>
+                        <div class="headshot placeholder-img" role="img" aria-label="Photo of Fila"></div>
+                        <h3>Fila</h3>
                         <p class="specialty">Classic Cuts & Styling</p>
                     </div>
                 </div>
@@ -80,16 +74,19 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
+            <nav aria-label="Footer navigation">
+                <div class="footer-links">
+                    <a href="contact.html" aria-label="Privacy Policy page">Privacy Policy</a>
+                    <a href="contact.html" aria-label="Terms of Service page">Terms of Service</a>
+                </div>
+            </nav>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

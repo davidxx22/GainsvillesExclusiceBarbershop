@@ -4,104 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Gainesville's Exclusive Barbershop</title>
-    <meta name="description" content="Explore our premium grooming services including haircuts, hot towel shaves, and beard trims.">
-    <!-- Google Fonts -->
+    <meta name="description" content="Explore our premium grooming services including haircuts, hot towel shaves, and beard trims at Gainesville's Exclusive Barbershop.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .page-section { padding-top: 150px; }
-    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="index.html">
-                    <img src="img/GNV logo.webp" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                <a href="index.html" aria-label="Gainesville's Exclusive Barbershop - Home">
+                    <img src="img/GNV logo.webp" alt="Gainesville's Exclusive Barbershop logo" class="brand-logo" width="55" height="55">
                 </a>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="nav-links" role="list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="services.html" class="nav-link active" aria-current="page">Services</a></li>
                 <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                 <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                <li><button class="btn-primary cta-nav" onclick="window.location.href='contact.html'">Book Appointment</button></li>
+                <li><a href="contact.html" class="btn-primary cta-nav" role="button">Book Appointment</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main id="main-content">
-        <!-- Services Page -->
-        <section id="services" class="page-section">
+        <section id="services" class="page-section inner-page" aria-label="Our Services">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <div class="divider"></div>
+                <h1>Our Services</h1>
+                <div class="divider" aria-hidden="true"></div>
                 <p class="service-note">All services include a complimentary hot towel treatment.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-category">
-                    <h3>Haircuts</h3>
-                    <div class="service-menu">
-                        <div class="service-item">
+                    <h2>Haircuts</h2>
+                    <div class="service-menu" role="list">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Standard Haircut</h4>
+                                <h3>Standard Haircut</h3>
                                 <p>A tailored precision cut finished with styling.</p>
                             </div>
-                            <div class="service-price">$40</div>
+                            <div class="service-price" aria-label="Price: $40">$40</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Exclusive Skin Fade</h4>
+                                <h3>Exclusive Skin Fade</h3>
                                 <p>Flawless skin fade, blended to perfection.</p>
                             </div>
-                            <div class="service-price">$45</div>
+                            <div class="service-price" aria-label="Price: $45">$45</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Buzz Cut</h4>
+                                <h3>Buzz Cut</h3>
                                 <p>Clean, even clipper cut with sharp line-up.</p>
                             </div>
-                            <div class="service-price">$30</div>
+                            <div class="service-price" aria-label="Price: $30">$30</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="service-category">
-                    <h3>Shaves & Beard</h3>
-                    <div class="service-menu">
-                        <div class="service-item">
+                    <h2>Shaves & Beard</h2>
+                    <div class="service-menu" role="list">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Hot Towel Shave</h4>
+                                <h3>Hot Towel Shave</h3>
                                 <p>Traditional straight razor shave with essential oils.</p>
                             </div>
-                            <div class="service-price">$35</div>
+                            <div class="service-price" aria-label="Price: $35">$35</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Beard Trim & Line Up</h4>
+                                <h3>Beard Trim & Line Up</h3>
                                 <p>Sculpting, shaping, and crisp straight razor edges.</p>
                             </div>
-                            <div class="service-price">$25</div>
+                            <div class="service-price" aria-label="Price: $25">$25</div>
                         </div>
-                        <div class="service-item">
+                        <div class="service-item" role="listitem">
                             <div class="service-info">
-                                <h4>Ultimate Grooming Pkg</h4>
+                                <h3>Ultimate Grooming Pkg</h3>
                                 <p>Haircut, hot towel shave, facial scrub, and styling.</p>
                             </div>
-                            <div class="service-price">$80</div>
+                            <div class="service-price" aria-label="Price: $80">$80</div>
                         </div>
                     </div>
                 </div>
@@ -110,16 +104,19 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p>&copy; 2026 Gainesville's Exclusive Barbershop. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
+            <nav aria-label="Footer navigation">
+                <div class="footer-links">
+                    <a href="contact.html" aria-label="Privacy Policy page">Privacy Policy</a>
+                    <a href="contact.html" aria-label="Terms of Service page">Terms of Service</a>
+                </div>
+            </nav>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
